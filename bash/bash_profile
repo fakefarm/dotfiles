@@ -60,4 +60,31 @@ alias 7lc='cd /Users/dave/Dropbox/700* && ls -G'
 alias 8lc='cd /Users/dave/Dropbox/800* && ls -G'
 alias 9lc='cd /Users/dave/Dropbox/900* && ls -G'
 
+alias ac='cd /Users/davidwoodall/Code/accounts'
+alias ba='cd /Users/davidwoodall/Code/ls-bacon'
+alias bo='cd /Users/davidwoodall/Code/bohemia'
+alias br='cd /Users/davidwoodall/Code/browse'
+alias cs='cd /Users/davidwoodall/Code/city'
+alias db='cd /Users/davidwoodall/Code/deal_bucks'
+alias de='cd /Users/davidwoodall/Code/deals'
+alias ds='cd /Users/davidwoodall/Code/deals'
+alias es='cd /Users/davidwoodall/Code/escapes'
+alias ev='cd /Users/davidwoodall/Code/events'
+alias fb='cd /Users/davidwoodall/Code/fakeybiller'
+alias en='cd /Users/davidwoodall/Code/ls-enticements'
+alias mo='cd /Users/davidwoodall/Code/mobile'
+alias pa='cd /Users/davidwoodall/Code/payments'
+alias pi='cd /Users/davidwoodall/Code/pipeline'
+alias ss='cd /Users/davidwoodall/Code/sso-frontend'
+alias st='cd /Users/davidwoodall/Code/stepford'
+alias sy='cd /Users/davidwoodall/Code/syringe'
+alias ts='cd /Users/davidwoodall/Code/travel-service'
+
+alias bp='cd /Users/davidwoodall/Dropbox/dotfiles/bash && vi bash_profile' 
+alias dot='cd /Users/davidwoodall/Dropbox/dotfiles/'
+
 alias clean-cellar="pushd /usr/local/Library/Formula && git add . && git reset HEAD --hard && popd"
+
+alias c='cd /Users/davidwoodall/Code'
+
+

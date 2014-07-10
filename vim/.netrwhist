@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/davidwoodall/Dropbox/dotfiles'
+let g:netrw_dirhist_2='/Users/davidwoodall/Dropbox/dotfiles/bash'
+let g:netrw_dirhist_3='/Users/davidwoodall/Dropbox/dotfiles'
+let g:netrw_dirhist_4='/Users/davidwoodall/Dropbox/dotfiles/bash'
+let g:netrw_dirhist_5='/Users/davidwoodall/Dropbox/dotfiles'
+let g:netrw_dirhist_6='/Users/davidwoodall/Dropbox/dotfiles/bash'
+let g:netrw_dirhist_7='/Users/davidwoodall/Dropbox/dotfiles'
+let g:netrw_dirhist_8='/Users/davidwoodall/Dropbox/dotfiles/bash'
