@@ -1,0 +1,63 @@
+export PATH=/usr/local/bin:$PATH
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+export GMAIL_USER="dmwoodall@gmail.com"
+export GMAIL_PASS="Curtis12!"
+export USER='dave'
+export PASSWORD='curtis12'
+
+# Git
+
+if [ -f ~/.git-completion.bash ]; then
+source ~/.git-completion.bash
+fi
+
+# Git branch in prompt.
+parse_git_branch() {
+git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+export PS1=" \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
+
+
+alias don='defaults write com.apple.Finder AppleShowAllFiles TRUE && killall Finder'
+alias doff='defaults write com.apple.Finder AppleShowAllFiles FALSE && killall Finder'
+
+# Shortcuts
+alias dat="cd /Users/dave/Dropbox/200_work/201_entities/214_destroy_all_tasks/site"
+alias go="cd /Users/dave/Dropbox/300_code/303_sandbox/311_angular/onRails/goalies"
+alias gx="open /Applications/GitX.app -n"
+alias app="cd /Users/dave/Dropbox/200_work/203_invited_home/200_app/invited_home"
+alias rain="cd /Users/dave/Dropbox/300_code/303_sandbox/315_raingular/goalies"
+alias abcd="cd /Users/dave/Dropbox/200_work/201_entities/215_afterburners/afterburners"
+alias v2='cd /Users/dave/Dropbox/300_code/303_sandbox/330_rebuilding_rails/v2'
+
+## Git Related
+alias gs="git status"
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+
+## Misc
+alias 001="rails s -p 3001"
+alias 000="rails s -p 3000"
+
+alias drop="cd /Users/dave/Dropbox"
+alias bp="subl ~/.bash_profile"
+alias be="bundle exec"
+alias irb="irb --simple-prompt"
+alias gh='open http://www.github.com'
+alias pow='cd /Users/dave/.pow'
+alias up='cd ..'
+alias src="source ~/.bash_profile"
+
+alias 1lc='cd /Users/dave/Dropbox/100* && ls -G'
+alias 2lc='cd /Users/dave/Dropbox/200* && ls -G'
+alias 3lc='cd /Users/dave/Dropbox/300* && ls -G'
+alias 4lc='cd /Users/dave/Dropbox/400* && ls -G'
+alias 5lc='cd /Users/dave/Dropbox/500* && ls -G'
+alias 6lc='cd /Users/dave/Dropbox/600* && ls -G'
+alias 7lc='cd /Users/dave/Dropbox/700* && ls -G'
+alias 8lc='cd /Users/dave/Dropbox/800* && ls -G'
+alias 9lc='cd /Users/dave/Dropbox/900* && ls -G'
+
+alias clean-cellar="pushd /usr/local/Library/Formula && git add . && git reset HEAD --hard && popd"
