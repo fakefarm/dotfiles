@@ -75,8 +75,8 @@ alias st='cd /Users/davidwoodall/Code/stepford'
 alias sy='cd /Users/davidwoodall/Code/syringe'
 alias ts='cd /Users/davidwoodall/Code/travel-service'
 
-alias bp='cd /Users/davidwoodall/Dropbox/dotfiles/bash && vi bash_profile' 
-alias dot='cd /Users/davidwoodall/Dropbox/dotfiles/'
+alias bp='cd /Users/davidwoodall/Repos/dotfiles/bash && vi bash_profile' 
+alias dot='cd /Users/davidwoodall/Repos/dotfiles/'
 alias lf='vim --remote-silent'
 
 alias clean-cellar="pushd /usr/local/Library/Formula && git add . && git reset HEAD --hard && popd"
