@@ -42,7 +42,7 @@ alias 001="rails s -p 3001"
 alias 000="rails s -p 3000"
 
 alias drop="cd /Users/dave/Dropbox"
-alias bp="subl ~/.bash_profile"
+alias bp="vim ~/.bash_profile"
 alias be="bundle exec"
 alias irb="irb --simple-prompt"
 alias gh='open http://www.github.com'
