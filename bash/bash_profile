@@ -18,18 +18,20 @@ git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 export PS1=" \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 
+alias flush='echo "flush_all" | nc localhost 11211'
 
 alias don='defaults write com.apple.Finder AppleShowAllFiles TRUE && killall Finder'
 alias doff='defaults write com.apple.Finder AppleShowAllFiles FALSE && killall Finder'
 
 # Shortcuts
-alias dat="cd /Users/dave/Dropbox/200_work/201_entities/214_destroy_all_tasks/site"
-alias go="cd /Users/dave/Dropbox/300_code/303_sandbox/311_angular/onRails/goalies"
+alias dat="cd $HOME/Dropbox/200_work/201_entities/214_destroy_all_tasks/site"
+alias go="cd $HOME/Dropbox/300_code/303_sandbox/311_angular/onRails/goalies"
 alias gx="open /Applications/GitX.app -n"
-alias app="cd /Users/dave/Dropbox/200_work/203_invited_home/200_app/invited_home"
-alias rain="cd /Users/dave/Dropbox/300_code/303_sandbox/315_raingular/goalies"
-alias abcd="cd /Users/dave/Dropbox/200_work/201_entities/215_afterburners/afterburners"
-alias v2='cd /Users/dave/Dropbox/300_code/303_sandbox/330_rebuilding_rails/v2'
+alias app="cd $HOME/Dropbox/200_work/203_invited_home/200_app/invited_home"
+alias rain="cd $HOME/Dropbox/300_code/303_sandbox/315_raingular/goalies"
+alias abcd="cd $HOME/Dropbox/200_work/201_entities/215_afterburners/afterburners"
+alias v2='cd $HOME/Dropbox/300_code/303_sandbox/330_rebuilding_rails/v2'
+alias jot='cd /Users/davidwoodall/Repos/jot && ./jot'
 
 ## Git Related
 alias gs="git status"
@@ -39,50 +41,53 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 alias 001="rails s -p 3001"
 alias 000="rails s -p 3000"
 
-alias drop="cd /Users/dave/Dropbox"
+alias drop="cd $HOME/Dropbox"
 alias be="bundle exec"
 alias irb="irb --simple-prompt"
 alias gh='open http://www.github.com'
-alias pow='cd /Users/dave/.pow'
+alias pow='cd $HOME/.pow'
 alias up='cd ..'
 alias src="source ~/.bash_profile"
+alias fs='flush && STEPFORD_LOCAL=true foreman start'
+alias bl='bundle --local'
 
-alias 1lc='cd /Users/dave/Dropbox/100* && ls -G'
-alias 2lc='cd /Users/dave/Dropbox/200* && ls -G'
-alias 3lc='cd /Users/dave/Dropbox/300* && ls -G'
-alias 4lc='cd /Users/dave/Dropbox/400* && ls -G'
-alias 5lc='cd /Users/dave/Dropbox/500* && ls -G'
-alias 6lc='cd /Users/dave/Dropbox/600* && ls -G'
-alias 7lc='cd /Users/dave/Dropbox/700* && ls -G'
-alias 8lc='cd /Users/dave/Dropbox/800* && ls -G'
-alias 9lc='cd /Users/dave/Dropbox/900* && ls -G'
 
-alias ac='cd /Users/davidwoodall/Code/accounts'
-alias ba='cd /Users/davidwoodall/Code/ls-bacon'
-alias bo='cd /Users/davidwoodall/Code/bohemia'
-alias br='cd /Users/davidwoodall/Code/browse'
-alias cs='cd /Users/davidwoodall/Code/city'
-alias db='cd /Users/davidwoodall/Code/deal_bucks'
-alias de='cd /Users/davidwoodall/Code/deals'
-alias ds='cd /Users/davidwoodall/Code/deals'
-alias es='cd /Users/davidwoodall/Code/escapes'
-alias ev='cd /Users/davidwoodall/Code/events'
-alias fb='cd /Users/davidwoodall/Code/fakeybiller'
-alias en='cd /Users/davidwoodall/Code/ls-enticements'
-alias mo='cd /Users/davidwoodall/Code/mobile'
-alias pa='cd /Users/davidwoodall/Code/payments'
-alias pi='cd /Users/davidwoodall/Code/pipeline'
-alias ss='cd /Users/davidwoodall/Code/sso-frontend'
-alias st='cd /Users/davidwoodall/Code/stepford'
-alias sy='cd /Users/davidwoodall/Code/syringe'
-alias ts='cd /Users/davidwoodall/Code/travel-service'
+alias 1lc='cd $HOME/Dropbox/100* && ls -G'
+alias 2lc='cd $HOME/Dropbox/200* && ls -G'
+alias 3lc='cd $HOME/Dropbox/300* && ls -G'
+alias 4lc='cd $HOME/Dropbox/400* && ls -G'
+alias 5lc='cd $HOME/Dropbox/500* && ls -G'
+alias 6lc='cd $HOME/Dropbox/600* && ls -G'
+alias 7lc='cd $HOME/Dropbox/700* && ls -G'
+alias 8lc='cd $HOME/Dropbox/800* && ls -G'
+alias 9lc='cd $HOME/Dropbox/900* && ls -G'
 
-alias bp='cd /Users/davidwoodall/Repos/dotfiles/bash && vi bash_profile' 
-alias dot='cd /Users/davidwoodall/Repos/dotfiles/'
+alias ac='cd $HOME/Code/accounts'
+alias ba='cd $HOME/Code/ls-bacon'
+alias bo='cd $HOME/Code/bohemia'
+alias br='cd $HOME/Code/browse'
+alias cs='cd $HOME/Code/city'
+alias db='cd $HOME/Code/deal_bucks'
+alias de='cd $HOME/Code/deals'
+alias ds='cd $HOME/Code/deals'
+alias es='cd $HOME/Code/escapes'
+alias ev='cd $HOME/Code/events'
+alias fb='cd $HOME/Code/fakeybiller'
+alias en='cd $HOME/Code/ls-enticements'
+alias mo='cd $HOME/Code/mobile'
+alias pa='cd $HOME/Code/payments'
+alias pi='cd $HOME/Code/pipeline'
+alias ss='cd $HOME/Code/sso-frontend'
+alias st='cd $HOME/Code/stepford'
+alias sy='cd $HOME/Code/syringe'
+alias ts='cd $HOME/Code/travel-service'
+
+alias bp='cd $HOME/Repos/dotfiles/bash && vi bash_profile' 
+alias dot='cd $HOME/Repos/dotfiles/'
 alias lf='vim --remote-silent'
 
 alias clean-cellar="pushd /usr/local/Library/Formula && git add . && git reset HEAD --hard && popd"
 
-alias c='cd /Users/davidwoodall/Code'
+alias c='cd $HOME/Code'
 
 
