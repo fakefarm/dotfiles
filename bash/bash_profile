@@ -31,7 +31,7 @@ alias app="cd $HOME/Dropbox/200_work/203_invited_home/200_app/invited_home"
 alias rain="cd $HOME/Dropbox/300_code/303_sandbox/315_raingular/goalies"
 alias abcd="cd $HOME/Dropbox/200_work/201_entities/215_afterburners/afterburners"
 alias v2='cd $HOME/Dropbox/300_code/303_sandbox/330_rebuilding_rails/v2'
-alias jot='cd /Users/davidwoodall/Repos/jot && ./jot'
+alias jot='cd $HOME/Repos/jot && ./jot'
 
 ## Git Related
 alias gs="git status"
@@ -50,7 +50,7 @@ alias up='cd ..'
 alias src="source ~/.bash_profile"
 alias fs='flush && STEPFORD_LOCAL=true foreman start'
 alias bl='bundle --local'
-
+alias dev_db_sync='DB_ENCRYPTION_KEY=hungry2601 bundle exec rake db:reload && say “db finished”'
 
 alias 1lc='cd $HOME/Dropbox/100* && ls -G'
 alias 2lc='cd $HOME/Dropbox/200* && ls -G'
