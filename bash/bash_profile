@@ -32,6 +32,7 @@ alias rain="cd $HOME/Dropbox/300_code/303_sandbox/315_raingular/goalies"
 alias abcd="cd $HOME/Dropbox/200_work/201_entities/215_afterburners/afterburners"
 alias v2='cd $HOME/Dropbox/300_code/303_sandbox/330_rebuilding_rails/v2'
 alias jot='cd $HOME/Repos/jot && ./jot'
+alias fff='cd $HOME/Repos/ffffetch && ruby ffffound.rb'
 
 ## Git Related
 alias gs="git status"
